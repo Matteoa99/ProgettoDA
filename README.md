@@ -18,7 +18,7 @@ Output json content
 - **meta1**: optional field 
 - **meta2**: optional field
 - **tz_sa**: timestamp sentiment evaluation (ISO DATE 8601, es: 2022-01-04T01:30:08+01:00)
-- **sentiment**: negative|positive
+- **sentiment**: negative | positive
 - **sentiment_value**: percentage sentiment forecast
 
 # Pre-requisite
