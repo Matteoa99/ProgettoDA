@@ -28,10 +28,10 @@ for item in lines:
     logits = logits.squeeze(0)
 
     # Extract probabilities
-    proba = torch.nn.functional.softmax(logits, dim=0)
+    prob = torch.nn.functional.softmax(logits, dim=0)
 
     # Unpack the tensor to obtain negative and positive probabilities
-    negative, positive = proba
+    negative, positive = prob
 
     pos = np.round(positive.item(), 4)
     neg = np.round(negative.item(), 4)
