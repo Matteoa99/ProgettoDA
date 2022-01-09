@@ -7,7 +7,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # Read data from input file
 file = open('input.csv', 'r', encoding='utf-8')
-Lines = file.readlines()
+lines = file.readlines()
 file.close()
 
 # Load model and tokenizer
@@ -16,8 +16,8 @@ model = AutoModelForSequenceClassification.from_pretrained("MilaNLProc/feel-it-i
 
 ris = ""
 # Predict sentiment and update json for each line
-for line in Lines:
-    data = json.loads(line.strip())
+for item in lines:
+    data = json.loads(item.strip())
 
     inputs = tokenizer(data["text"], return_tensors="pt")
 
