@@ -15,6 +15,9 @@ PyTorch provides tensor computing (like NumPy) with strong acceleration via grap
 Transformers provides APIs to quickly download and use those pretrained models on a given text, fine-tune them on your own datasets and then share them with the community on our model hub.
 Transformers is backed by the three most popular deep learning libraries — Jax, PyTorch and TensorFlow — with a seamless integration between them.
 
+# Model
+[Feel-it-italian-sentiment model](https://huggingface.co/MilaNLProc/feel-it-italian-sentiment) performs sentiment analysis on Italian. They fine-tuned the [UmBERTo model](https://huggingface.co/Musixmatch/umberto-commoncrawl-cased-v1) on their new dataset (i.e., FEEL-IT) obtaining state-of-the-art performances on different benchmark corpora.
+
 # Usage
 User can provide to the script a csv file in which each line is a json content structure as below:
 
