@@ -49,7 +49,7 @@ for line in Lines:
     # Create result string
     ris += json.dumps(data) + "\n"
 
-# Write data into output file
+# Write string into output file
 file = open("output.csv", "w", encoding='utf-8')
 file.write(ris)
 file.close()
