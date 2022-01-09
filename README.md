@@ -1,5 +1,5 @@
 # Data Analytics Project
-Project build in Python for data analytics course usging python and Sentiment Analysis and Emotion Recognition in Italian (using BERT).
+Project build in Python for data analytics course usging python and Sentiment Analysis and Emotion Recognition in Italian (using BERT). The aim of the project is to perform sentiment analytics of an Italian sentence.
 Python script will read json values from *csv* file, it will predict sentiment foreach line after that a new file is created.
 
 Input json content 
