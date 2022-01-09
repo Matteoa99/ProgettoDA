@@ -5,17 +5,16 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# Load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
-model = AutoModelForSequenceClassification.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
-
 # Read data from input file
 file = open('input.csv', 'r', encoding='utf-8')
 Lines = file.readlines()
 file.close()
 
-ris = ""
+# Load model and tokenizer
+tokenizer = AutoTokenizer.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
+model = AutoModelForSequenceClassification.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
 
+ris = ""
 # Predict sentiment and update json for each line
 for line in Lines:
     data = json.loads(line.strip())
