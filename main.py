@@ -6,11 +6,11 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # Read data from input file
-file = open('input.csv', 'r', encoding='utf-8')
+file = open("input.csv", "r", encoding="utf-8")
 lines = file.readlines()
 file.close()
 
-# Load model and tokenizer
+# Load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("MilaNLProc/feel-it-italian-sentiment")
 
@@ -49,6 +49,6 @@ for item in lines:
     ris += json.dumps(data) + "\n"
 
 # Write string into output file
-file = open("output.csv", "w", encoding='utf-8')
+file = open("output.csv", "w", encoding="utf-8")
 file.write(ris)
 file.close()
