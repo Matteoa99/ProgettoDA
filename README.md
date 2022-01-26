@@ -2,8 +2,7 @@
 Project is built in Python for data analytics course using a library for **Sentiment Analysis and Emotion Recognition in Italian**. The aim of the project is to perform sentiment analytics of an Italian sentence read *json* value from *csv* file, it will predict sentiment foreach line after that a new file is created.
 
 # Pre-requisite
-- **TensorFlow**: TensorFlow is a free and open-source software library for machine learning and artificial intelligence. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks. It can be used in a wide variety of programming languages, most notably Python, as well as Javascript, C++, and Java. This flexibility lends itself to a range of applications in many different sectors.
-- **BERT**: Bidirectional Encoder Representations from Transformers (BERT) is a transformer-based machine learning technique for natural language processing (NLP) pre-training developed by Google; is it integrate in Tensorflow.
+- **BERT**: Bidirectional Encoder Representations from Transformers (BERT) is a transformer-based machine learning technique for natural language processing (NLP) pre-training developed by Google. BERT can consider at the same time all the words present in that same sentence, therefore in a bidirectional way.
 
 # Model
 [Feel-it-italian-sentiment model](https://huggingface.co/MilaNLProc/feel-it-italian-sentiment) performs sentiment analysis on Italian. They fine-tuned the [UmBERTo model](https://huggingface.co/Musixmatch/umberto-commoncrawl-cased-v1) on their new dataset (i.e., FEEL-IT) obtaining state-of-the-art performances on different benchmark corpora.
