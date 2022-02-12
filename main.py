@@ -18,7 +18,6 @@ ris = ""
 # Predict sentiment and update json for each line
 for item in lines:
     data = json.loads(item.strip())
-
     inputs = tokenizer(data["text"], return_tensors="pt")
 
     # Call the model and get the logits
